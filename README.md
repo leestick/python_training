@@ -1,1 +1,1 @@
-# python_training
+# Repositiry for training
