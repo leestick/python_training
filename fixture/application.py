@@ -1,5 +1,5 @@
 from selenium.webdriver.ie.webdriver import WebDriver
-from group import Group
+
 __author__ = 'ioK'
 
 
