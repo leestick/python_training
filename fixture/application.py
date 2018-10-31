@@ -1,4 +1,4 @@
-from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium.webdriver.ie.webdriver import WebDriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 
