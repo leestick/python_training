@@ -1,4 +1,4 @@
-from selenium.webdriver.ie.webdriver import WebDriver
+from selenium.webdriver.chrome.webdriver import WebDriver
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 
@@ -11,7 +11,7 @@ class Application:
         self.wd = WebDriver()
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
-        self.group = GroupHelper
+        self.group = GroupHelper(self)
 
     def open_home_page(self):
         wd = self.wd
