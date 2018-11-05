@@ -10,6 +10,7 @@ class Application:
     def __init__(self):
         self.wd = WebDriver()
         self.wd.implicitly_wait(5)
+        self.wd.maximize_window()
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
 
@@ -22,7 +23,7 @@ class Application:
 
     def open_home_page(self):
         wd = self.wd
-        wd.get("http://localhost/addressbook/")
+        wd.get("http://localhost:80/addressbook/")
 
     def destroy(self):
         self.wd.quit()
