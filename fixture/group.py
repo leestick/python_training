@@ -38,6 +38,10 @@ class GroupHelper:
         wd = self.app.wd
         wd.find_element_by_name('selected[]').click()
 
+    def select_group_by_index(self, index):
+        wd = self.app.wd
+        wd.find_elements_by_name('selected[]')[index].click()
+
     def delete_first_group(self):
         self.delete_group_by_index(0)
 
