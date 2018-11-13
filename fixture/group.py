@@ -2,6 +2,7 @@ __author__ = 'ioK'
 
 from model.group import Group
 
+
 class GroupHelper:
 
     def __init__(self, app):

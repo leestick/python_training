@@ -2,6 +2,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver, Options, RemoteWebDri
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from fixture.session import SessionHelper
 from fixture.group import GroupHelper
+from fixture.contact import ContactHelper
 
 __author__ = 'ioK'
 
@@ -17,6 +18,7 @@ class Application:
         self.wd.maximize_window()
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
+        self.contact = ContactHelper(self)
 
     def is_valid(self):
         try:
